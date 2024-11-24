@@ -78,4 +78,5 @@ After the installation is done please ensure the conda list displays the librari
 !conda run -n xrmogen conda list
 !conda run -n xrmogen pip list     
 ```
-
+Before running any test or train config files, cd into the parent xrmogen folder. Afterwards please download the preprocessed data as instructed in the xrmogen repo under a folder name /data. Also for testing purposes please install the bailando
+pre-trained weights under a created /example folder. Remember the only difference between running the python file under a traditional IDE is in colab you have to include "!" before python, so "!python main.py.." 
