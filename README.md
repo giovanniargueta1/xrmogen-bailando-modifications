@@ -44,6 +44,7 @@ After the installation is done please ensure the conda list displays the librari
 ```python
 #xrmogen requirements
 !conda install -n xrmogen ffmpeg -y
+#ignore the line below if you are relying on Colab GPU, find compatible version of pytorch with CUDA
 !conda install -n xrmogen pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.1 -c pytorch
 !conda run -n xrmogen pip install "imagio==2.15.0"
 !conda run -n xrmogen pip install Pillow
@@ -80,3 +81,18 @@ After the installation is done please ensure the conda list displays the librari
 ```
 Before running any test or train config files, cd into the parent xrmogen folder. Afterwards please download the preprocessed data as instructed in the xrmogen repo under a folder name /data. Also for testing purposes please install the bailando
 pre-trained weights under a created /example folder. Remember the only difference between running the python file under a traditional IDE is in colab you have to include "!" before python, so "!python main.py.." 
+
+*Please note if you want to take advantage of Colab's selection of GPUS you have to install the appropriate CUDA version. For example if you are using the A100 GPU, you should install
+PyTorch with CUDA 11.8 by using the command
+
+```python
+!pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#then check for GPU and CUDA compatibility
+import torch
+print(torch.__version__)
+print(torch.cuda.is_available())
+print(torch.version.cuda)
+print(torch.backends.cudnn.version())
+```
+
+
