@@ -2,6 +2,7 @@
 the poses as a sequence(https://github.com/softcat477/SMPL-to-FBX)\*\*
 
 As a basic overview, this Blender script will print all detected collision frames between two joints, and two cylinders (using midpoints) that connect between any two pairs of joints (called bones in Blender). Please note the SMPL-add hierarchy as seen below where the SMPL-male is the figure made up of 24 joints and where the mesh is the actual 3D human mesh that wraps around the joints to make up the human-realistic figure.
+![Example Image](images/smpl-addon2.PNG)
 
 
 - First, install the latest version of Blender, the SMPL-addon is compatible with any version past 2.8. Then head over to the SMPL-to-FBX Github repository and zip the folder "load\_smpl\_addon". Once you successfully installed Blender, please open the python.exe found in the Blender file system and pip install "scipy".
