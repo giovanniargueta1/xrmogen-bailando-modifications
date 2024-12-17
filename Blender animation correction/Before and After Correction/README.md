@@ -1,1 +1,1 @@
-
+This directory provides the before and after correction videos using the test pickle file provided. Both videos are running at 10 FPS to clearly show collisions. Please note the correction video is constructed using a PNG video converter and the original is a full rendering of the sequence. 
