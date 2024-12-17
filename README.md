@@ -1,3 +1,5 @@
+Head over to the "Blender Animation Correction" directory for the correction script. The following is the colab tutorial. 
+
 # xrmogen_colab_tutorial
 
 The framework(xrmogen) can be found here:https://github.com/openxrlab/xrmogen
