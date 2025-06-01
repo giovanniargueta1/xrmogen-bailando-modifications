@@ -1,3 +1,5 @@
+# ** The paper corresponding to this project has been recently approved for publication in SmartNets 2025 Conference ! ** 
+
 Head over to the "Blender Animation Correction" directory for the correction script. The following is the colab tutorial. 
 
 # xrmogen_colab_tutorial
